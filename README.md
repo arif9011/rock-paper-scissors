@@ -1,6 +1,6 @@
 # rock-paper-scissors
 
-Introduction: This is rock paper scissors game using  programming language in Python.
+Introduction: This is a rock paper scissors game using  programming language in Python.
  Milestone 1 Task1
 Create a Github repo
  Milestone 2
