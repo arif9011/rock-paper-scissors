@@ -384,9 +384,9 @@ if __name__ == '__main__':
     computer_list = ['rock', 'paper', 'scissors', 'nothing']
     play_game(computer_list)
     
-    Screen Shoot:
+   
     
-    ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/4e815055-f5e2-44c4-8320-8d7b2f8b4889)
+   
 
  # Finally, What I have learned
 •	Create a teachable machine model that recognises different hand signals for the game.
