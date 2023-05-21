@@ -227,7 +227,6 @@ Fuction play_game() is the main function of the whole game. It’s  repeat three
 
 
 
-
 import cv2
 from keras.models import load_model
 import numpy as np
