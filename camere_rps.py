@@ -4,7 +4,7 @@ import numpy as np
 import time
 import random
 
-class  rps: 
+class  RPS: 
     def __init__(self, computer_list):
         self.computer_list = computer_list
         self.computer_wins = 0
@@ -14,14 +14,8 @@ class  rps:
     def get_computer_choice(self):
         computer_choice = random.choice(self.computer_list)
         return computer_choice
-
-    
-    def get_prediction(self):
-        model = load_model("keras_Model.h5", compile=False)
-        cap = cv2.VideoCapture(0)
-        data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
-        
-    
+  
+    def countdown():
         countdown = 5
         print("\nGet ready to show your choice :")
         while countdown >= 0:
@@ -29,6 +23,12 @@ class  rps:
             cv2.waitKey(1000)
             countdown -= 1
         print("\nNow show your hand choice :")
+    countdown() 
+
+    def get_prediction(self):
+        model = load_model("keras_Model.h5", compile=False)
+        cap = cv2.VideoCapture(0)
+        data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
              
         end_time = time.time() + 5
         while time.time() < end_time:
@@ -61,7 +61,6 @@ class  rps:
                 choice="nothing"
                 print("nothing")
 
-            print(prediction)
             if (cv2.waitKey(1) & 0xFF == ord('q')):
                 break
         cap.release()
@@ -78,7 +77,9 @@ class  rps:
             print("It's a tie!")
             result = "tie"
             # Combinations for user to win
-        elif (computer_choice == "rock" and user_choice == "paper") or (computer_choice == "paper" and user_choice == "scissors") or (computer_choice == "scissors" and user_choice == "rock"):
+        elif (computer_choice == "rock" and user_choice == "paper") \
+            or (computer_choice == "paper" and user_choice == "scissors") \
+            or (computer_choice == "scissors" and user_choice == "rock"):
             
             print("User win")
             result = "User"
@@ -90,7 +91,7 @@ class  rps:
 def play_game():
     
     computer_list = ['rock','paper','scissors','nothing']
-    game=rps(computer_list)
+    game=RPS(computer_list)
     
       
     while game.computer_wins != 3 and game.user_wins != 3:
@@ -99,7 +100,7 @@ def play_game():
             computer_choice =game.get_computer_choice()
         
             user_choice = game.get_prediction()
-            print(user_choice)
+            
             winner=game.get_winner(computer_choice,user_choice)
         
             if winner == "Computer":
@@ -111,9 +112,9 @@ def play_game():
             else:
                 pass    
                     
-            if game.computer_wins == 3 and game.computer_wins > game.user_wins:
+            if game.computer_wins == 3 :
                 print("Computer is the winner!")
-            elif game.user_wins == 3 and game.user_wins > game.computer_wins:
+            elif game.user_wins == 3 :
                 print("Congratulations User is the winner !")
             else:
                 pass
