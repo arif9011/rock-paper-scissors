@@ -175,7 +175,16 @@ The camera version is more complex and features three different methods that rep
 
  # Count Down
 countdown(), this function use time.time() for making countdown. When Countdown function start countdown from 5 seconds to 0 then start camera for showing hand to gesture. The former slows down the machine to make the programme user-friendly and asks the user to prepare to show their hand, while the latter merely slows down the programme and prints two rows of full stops when needed. The effects of these can be seen in the image below.
-
+ # Code: 
+    def countdown():
+        countdown = 5
+        print("\nGet ready to show your choice :")
+        while countdown >= 0:
+            print(f'{countdown}')
+            cv2.waitKey(1000)
+            countdown -= 1
+        print("\nNow show your hand choice :")
+    countdown() 
  # Screen Shoot:
  ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/bc4e172e-c1b2-45a5-b00b-ae8aeaca9ae9)
 ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/56a5cb8c-96cf-4b1f-9f31-8b8baebdf732)
