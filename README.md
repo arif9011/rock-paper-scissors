@@ -6,24 +6,24 @@ Rock-Paper-Scissors is a game in which each player simultaneously shows one of t
 Learning objectives
 The project's main learning objectives were the creation of a (small) image database for computer vision tasks, the set up of virtual environments and the installation of all required packages, and the practice of intermediate Python programming - especially 'if-else' statement, 'while' loops, and object oriented programming.
 
- MILESTONE 1: Set up environment
+ # MILESTONE 1: Set up environment
 •	set up GitHub
 •	Create a Github repo
 •	
- MILESTONE 2: Create the computer vision system
+# MILESTONE 2: Create the computer vision system
 •	creation of the dataset to be used to train the model used in the programme;
 •	creation of the model using Teachable Machine.
 •	Create an image project model with four different classes: Rock,Paper,Scissors, Nothing and download the model.
 
 
- MILESTONE 3:  Installation of the dependencies.
+ # MILESTONE 3:  Installation of the dependencies.
 •	creation of a new virtual environment;
 •	check the model working
 •	get familial with the code
 •	Install conda, PIP, tensorflow for python environment.
 •	Install ipykernel for using pip install ipykernel commmad. 
 
- Code:
+  # Code:
 import cv2
 from keras.models import load_model
 import numpy as np
@@ -44,17 +44,16 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
             
-# After the loop release the cap object
+
 cap.release()
-# Destroy all the windows
 cv2.destroyAllWindows()
  ‘’’
-Screenshot:
+ # Screenshot:
 ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/e39a9d00-9080-41b6-a795-bec534468de8)
 
  
 
-4 - MILESTONE 4: Creation of a 'Rock, Paper, Scissors' game (manual_rps.py).
+ # MILESTONE 4: Creation of a 'Rock, Paper, Scissors' game (manual_rps.py).
 •	store the user's and the computer's choices;
 •	figure out who won;
 •	create a function to simulate the game.
@@ -63,7 +62,7 @@ Create  a file name manual_rps.py for running game without camera. Then create t
 Use if else statement for selecting who will win the game based  on the classic rule of rock paper and scissors.  Create a function name get_winner and computer_choice and user_choice pass as a parameters.  
 Create a function name play and I have called all three   function inside this play function for running rock paper scissors game. 
 
-Code: 
+ # Code: 
 import random
 class rock_paper_scissors:
       
@@ -102,14 +101,14 @@ def play(computer_list = ['rock','paper','scissors']):
 play()
 
 
-Screen Shoot:
+ # Screen Shoot:
 ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/b745f065-52ec-4f9e-9664-a25db3ce440e)
 
  
 
 
 
-MILESTONE 5: Use the Camera to Play Rock-Paper-Scissors game (camera_rps.py).
+ # MILESTONE 5: Use the Camera to Play Rock-Paper-Scissors game (camera_rps.py).
 •	set up the camera and test the game;
 •	bonus implementations.
 
@@ -122,7 +121,7 @@ The camera version is more complex and features three different methods that rep
 •	get_prediction(), which understands the user's input using keras_model.h5 and probability;
 •	classify_output, which uses the list of probabilities from get_prediction() to determine the image inputted in the camera.
 
-Code: 
+ # Code: 
     def countdown():
         countdown = 5
         print("\nGet ready to show your choice :")
@@ -174,19 +173,19 @@ Code:
         cap.release()
         return choice
 
-Count Down
+ # Count Down
 countdown(), this function use time.time() for making countdown. When Countdown function start countdown from 5 seconds to 0 then start camera for showing hand to gesture. The former slows down the machine to make the programme user-friendly and asks the user to prepare to show their hand, while the latter merely slows down the programme and prints two rows of full stops when needed. The effects of these can be seen in the image below.
 
-Screen Shoot:
+ # Screen Shoot:
  ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/bc4e172e-c1b2-45a5-b00b-ae8aeaca9ae9)
 ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/56a5cb8c-96cf-4b1f-9f31-8b8baebdf732)
 
  
 
 
-Function get_winner()
+ # Function get_winner()
 Function get_winner has been user for who wins the game computer or user. Computer will choice randomly from giver list of Rock Paper Scissors user will show hand to gesture for choosing input. 
-Code:
+ # Code:
 def get_winner(self,computer_choice,user_choice):
         result=0
         
@@ -211,10 +210,10 @@ def get_winner(self,computer_choice,user_choice):
         return result    
 
 
-Function play_game()
+ # Function play_game()
 Fuction play_game() is the main function of the whole game. It’s  repeat three time for finding winner score 3. So, if user gets overall score 3 then user will win. It’s print(“Congratulations user is the winner!”).  Same if the computer gets overall score 3 then computer will win. It’s print(“Computer is the winner!”).
 
-Code:
+ # Code:
 def play_game(computer_list):
     
     game=RPS(computer_list)
@@ -253,10 +252,10 @@ def play_game(computer_list):
     print("Game over! Thank you for playing :")  
 
 
-function if __name__== ‘__main__’:	
+ # Function if __name__== ‘__main__’:	
  if __name__== ‘__main__’, function is used for calling play_game() for playing whole game.
 
-Code:
+ # Code:
 if __name__ == '__main__':
     computer_list = ['rock', 'paper', 'scissors', 'nothing']
     play_game(computer_list)
@@ -265,7 +264,7 @@ if __name__ == '__main__':
     
     ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/4e815055-f5e2-44c4-8320-8d7b2f8b4889)
 
-Finally, What I have learned
+ # Finally, What I have learned
 •	Create a teachable machine model that recognises different hand signals for the game.
 •	Create a virtual working environment using conda and install required libraries.
 •	Create a manual RPS game where the user and the computer choose their option and the code decided the winner.
