@@ -103,6 +103,8 @@ play()
 
 
 Screen Shoot:
+![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/b745f065-52ec-4f9e-9664-a25db3ce440e)
+
  
 
 
@@ -176,7 +178,9 @@ Count Down
 countdown(), this function use time.time() for making countdown. When Countdown function start countdown from 5 seconds to 0 then start camera for showing hand to gesture. The former slows down the machine to make the programme user-friendly and asks the user to prepare to show their hand, while the latter merely slows down the programme and prints two rows of full stops when needed. The effects of these can be seen in the image below.
 
 Screen Shoot:
- 
+ ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/bc4e172e-c1b2-45a5-b00b-ae8aeaca9ae9)
+![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/56a5cb8c-96cf-4b1f-9f31-8b8baebdf732)
+
  
 
 
@@ -256,6 +260,11 @@ Code:
 if __name__ == '__main__':
     computer_list = ['rock', 'paper', 'scissors', 'nothing']
     play_game(computer_list)
+    
+    Screen Shoot:
+    
+    ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/4e815055-f5e2-44c4-8320-8d7b2f8b4889)
+
 Finally, What I have learned
 •	Create a teachable machine model that recognises different hand signals for the game.
 •	Create a virtual working environment using conda and install required libraries.
@@ -263,4 +272,4 @@ Finally, What I have learned
 •	Create a camera RPS game that captures the choice of the user and decided the winner by comparing it with the choice of the computer.
 
 
-hi
+
