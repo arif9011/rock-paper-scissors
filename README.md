@@ -362,7 +362,9 @@ if __name__ == '__main__':
     
         
             
-   
+   # Screen Shoot:
+   ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/a560e6f5-f687-49b3-a011-53ba0afde2b0)
+
 
 
 
