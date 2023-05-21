@@ -50,6 +50,8 @@ cap.release()
 cv2.destroyAllWindows()
  ‘’’
 Screenshot:
+![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/e39a9d00-9080-41b6-a795-bec534468de8)
+
  
 
 4 - MILESTONE 4: Creation of a 'Rock, Paper, Scissors' game (manual_rps.py).
