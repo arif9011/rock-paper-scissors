@@ -1,4 +1,3 @@
-                               
  #Rock Paper Scissors Game
 
 Overview of the project
