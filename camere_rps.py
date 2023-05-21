@@ -5,7 +5,7 @@ import time
 import random
 
 class  RPS: 
-    def __init__(self, computer_list):
+    def __init__(self,computer_list):
         self.computer_list = computer_list
         self.computer_wins = 0
         self.user_wins = 0
@@ -87,13 +87,12 @@ class  RPS:
         else:
             print("Computer win")
             result = "Computer"
-        return result      
-def play_game():
+        return result    
+      
+def play_game(computer_list):
     
-    computer_list = ['rock','paper','scissors','nothing']
     game=RPS(computer_list)
     
-      
     while game.computer_wins != 3 and game.user_wins != 3:
            
         while True:
@@ -125,10 +124,13 @@ def play_game():
             # Destroy all the windows after the game ends
         cv2.destroyAllWindows()
            
-    print("Game over! Thank you for playing :")
+    print("Game over! Thank you for playing :")  
 
-play_game()  
-        
+if __name__ == '__main__':
+    computer_list = ['rock', 'paper', 'scissors', 'nothing']
+    play_game(computer_list)
+
+
     
         
             
