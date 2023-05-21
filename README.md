@@ -223,12 +223,16 @@ def get_winner(self,computer_choice,user_choice):
 Fuction play_game() is the main function of the whole game. It’s  repeat three time for finding winner score 3. So, if user gets overall score 3 then user will win. It’s print(“Congratulations user is the winner!”).  Same if the computer gets overall score 3 then computer will win. It’s print(“Computer is the winner!”).
 
  # Code:
+
+
+
+
+
 import cv2
 from keras.models import load_model
 import numpy as np
 import time
 import random
-
 class  RPS: 
     def __init__(self,computer_list):
         self.computer_list = computer_list
