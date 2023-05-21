@@ -1,6 +1,5 @@
-                               Name: MD Ariful Islam
-                               Email: arif_9011@yahoo.com
-                          Rock Paper Scissors Game
+                               
+Rock Paper Scissors Game
 
 Overview of the project
 Rock-Paper-Scissors is a game in which each player simultaneously shows one of three hand signals representing rock, paper, or scissors. Rock beats scissors. Scissors beats paper. Paper beats rock. The player who shows the first option that beats the other player's option wins. This is an implementation of an interactive "Rock Paper Scissors" game in which the user can play with the computer using the camera.
@@ -262,4 +261,4 @@ Finally, What I have learned
 •	Create a camera RPS game that captures the choice of the user and decided the winner by comparing it with the choice of the computer.
 
 
-
+hi
