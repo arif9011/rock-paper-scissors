@@ -25,7 +25,7 @@ class  RPS:
         print("\nNow show your hand choice :")
 
     def get_prediction(self):
-        self.choice=0
+        self.choice = 0
         model = load_model("keras_Model.h5", compile = False)
         cap = cv2.VideoCapture(0)
         data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
@@ -64,7 +64,7 @@ class  RPS:
         return choice
  
     def get_winner(self, computer_choice, user_choice):
-        result=0
+        result = 0
         
         print(f"computer Chooses: {computer_choice} and user chooses: {user_choice}")
         if user_choice == "nothing":
