@@ -46,7 +46,7 @@ class  RPS:
            
             print(index)
             if index == 0: 
-                choice=="rock"
+                choice =="rock"
                 print("rock")
             elif index == 1: 
                 choice="paper"
@@ -94,11 +94,11 @@ def play_game(computer_list):
            
         while True:
             game.countdown() 
-            computer_choice =game.get_computer_choice()
+            computer_choice = game.get_computer_choice()
         
             user_choice = game.get_prediction()
             
-            winner=game.get_winner(computer_choice, user_choice)
+            winner = game.get_winner(computer_choice, user_choice)
         
             if winner == "Computer":
                 game.computer_wins += 1
