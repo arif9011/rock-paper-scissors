@@ -6,7 +6,7 @@ import random
 
 class  RPS: 
 
-    def __init__(self,computer_list):
+    def __init__(self, computer_list):
         self.computer_list = computer_list
         self.computer_wins = 0
         self.user_wins = 0
@@ -49,13 +49,13 @@ class  RPS:
                 choice =="rock"
                 print("rock")
             elif index == 1: 
-                choice="paper"
+                choice = "paper"
                 print("paper")
             elif index == 2: 
-                choice="scissors" 
+                choice = "scissors" 
                 print("scissors")
             elif index == 3:
-                choice="nothing"
+                choice = "nothing"
                 print("nothing")
 
             if (cv2.waitKey(1) & 0xFF == ord('q')):
