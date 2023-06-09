@@ -174,12 +174,12 @@ The camera version is more complex and features three different methods that rep
                 break
         cap.release()
         return choice
-        ```
+```
 
  # Count Down
 countdown(), this function use time.time() for making countdown. When Countdown function start countdown from 5 seconds to 0 then start camera for showing hand to gesture. The former slows down the machine to make the programme user-friendly and asks the user to prepare to show their hand, while the latter merely slows down the programme and prints two rows of full stops when needed. The effects of these can be seen in the image below.
  # Code: 
-    ``` def countdown():
+ ``` def countdown():
         countdown = 5
         print("\nGet ready to show your choice :")
         while countdown >= 0:
@@ -188,7 +188,7 @@ countdown(), this function use time.time() for making countdown. When Countdown 
             countdown -= 1
         print("\nNow show your hand choice :")
     countdown() 
-    ```
+```
  
  
  # Screen Shoot:
@@ -221,7 +221,7 @@ Function get_winner has been user for who wins the game computer or user. Comput
             print("Computer win")
             result = "Computer"
         return result 
-        ```
+  ```
 
 
  # Function play_game()
@@ -359,7 +359,7 @@ if __name__ == '__main__':
     computer_list = ['rock', 'paper', 'scissors', 'nothing']
     play_game(computer_list)
     
-    ```
+ ```
 
 
     
@@ -377,7 +377,7 @@ if __name__ == '__main__':
 if __name__ == '__main__':
     computer_list = ['rock', 'paper', 'scissors', 'nothing']
     play_game(computer_list)
-    ```
+```
     
    
     
