@@ -24,7 +24,7 @@ The project's main learning objectives were the creation of a (small) image data
 •	Install ipykernel for using pip install ipykernel commmad. 
 
   # Code:
-import cv2
+``` import cv2
 from keras.models import load_model
 import numpy as np
 model = load_model('keras_model.h5')
@@ -47,7 +47,7 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
- ‘’’
+```
  # Screenshot:
 ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/e39a9d00-9080-41b6-a795-bec534468de8)
 
@@ -63,7 +63,7 @@ Use if else statement for selecting who will win the game based  on the classic 
 Create a function name play and I have called all three   function inside this play function for running rock paper scissors game. 
 
  # Code: 
-import random
+``` import random
 class rock_paper_scissors:
       
     def __init__(self, computer_list):
@@ -99,6 +99,7 @@ def play(computer_list = ['rock','paper','scissors']):
     rps.get_winner(computer_choice, user_choice)
 
 play()
+```
 
 
  # Screen Shoot:
@@ -122,6 +123,7 @@ The camera version is more complex and features three different methods that rep
 •	classify_output, which uses the list of probabilities from get_prediction() to determine the image inputted in the camera.
 
  # Code: 
+ ```
     def countdown():
         countdown = 5
         print("\nGet ready to show your choice :")
@@ -172,11 +174,12 @@ The camera version is more complex and features three different methods that rep
                 break
         cap.release()
         return choice
+        ```
 
  # Count Down
 countdown(), this function use time.time() for making countdown. When Countdown function start countdown from 5 seconds to 0 then start camera for showing hand to gesture. The former slows down the machine to make the programme user-friendly and asks the user to prepare to show their hand, while the latter merely slows down the programme and prints two rows of full stops when needed. The effects of these can be seen in the image below.
  # Code: 
-    def countdown():
+    ``` def countdown():
         countdown = 5
         print("\nGet ready to show your choice :")
         while countdown >= 0:
@@ -185,17 +188,16 @@ countdown(), this function use time.time() for making countdown. When Countdown 
             countdown -= 1
         print("\nNow show your hand choice :")
     countdown() 
+    ```
  # Screen Shoot:
  ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/bc4e172e-c1b2-45a5-b00b-ae8aeaca9ae9)
 ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/56a5cb8c-96cf-4b1f-9f31-8b8baebdf732)
-
- 
 
 
  # Function get_winner()
 Function get_winner has been user for who wins the game computer or user. Computer will choice randomly from giver list of Rock Paper Scissors user will show hand to gesture for choosing input. 
  # Code:
-def get_winner(self,computer_choice,user_choice):
+``` def get_winner(self,computer_choice,user_choice):
         result=0
         
         print(f"computer Chooses: {computer_choice} and user chooses: {user_choice}")
@@ -216,18 +218,15 @@ def get_winner(self,computer_choice,user_choice):
         else:
             print("Computer win")
             result = "Computer"
-        return result    
+        return result 
+        ```
 
 
  # Function play_game()
 Fuction play_game() is the main function of the whole game. It’s  repeat three time for finding winner score 3. So, if user gets overall score 3 then user will win. It’s print(“Congratulations user is the winner!”).  Same if the computer gets overall score 3 then computer will win. It’s print(“Computer is the winner!”).
 
  # Code:
-
-
-
-
-import cv2
+``` import cv2
 from keras.models import load_model
 import numpy as np
 import time
@@ -357,6 +356,8 @@ def play_game(computer_list):
 if __name__ == '__main__':
     computer_list = ['rock', 'paper', 'scissors', 'nothing']
     play_game(computer_list)
+    
+    ```
 
 
     
@@ -366,25 +367,15 @@ if __name__ == '__main__':
    ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/a560e6f5-f687-49b3-a011-53ba0afde2b0)
 
 
-
-
-
-
-
-
-
-    
-
-    
-
-
  # Function if __name__== ‘__main__’:	
  if __name__== ‘__main__’, function is used for calling play_game() for playing whole game.
 
  # Code:
+ ``` 
 if __name__ == '__main__':
     computer_list = ['rock', 'paper', 'scissors', 'nothing']
     play_game(computer_list)
+    ```
     
    
     
