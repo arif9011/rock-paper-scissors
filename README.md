@@ -189,6 +189,8 @@ countdown(), this function use time.time() for making countdown. When Countdown 
         print("\nNow show your hand choice :")
     countdown() 
     ```
+ 
+ 
  # Screen Shoot:
  ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/bc4e172e-c1b2-45a5-b00b-ae8aeaca9ae9)
 ![image](https://github.com/arif9011/rock-paper-scissors/assets/115591569/56a5cb8c-96cf-4b1f-9f31-8b8baebdf732)
